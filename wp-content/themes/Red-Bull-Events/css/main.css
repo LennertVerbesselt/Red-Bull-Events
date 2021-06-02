@@ -1,10 +1,38 @@
+
+/* Defining Fonts */
+@font-face {
+    font-family: AkzidenzRegular;  
+    src: url(http://RedBullEvents.test/wp-content/themes/Red-Bull-Events/fonts/Berthold-Akzidenz-Grotesk-Regular.otf);    
+}
+
+@font-face {
+    font-family: AkzidenzMedium;  
+    src: url(http://RedBullEvents.test/wp-content/themes/Red-Bull-Events/fonts/Berthold-Akzidenz-Grotesk-Medium.otf);    
+}
+
+@font-face {
+    font-family: AkzidenzBold;  
+    src: url(http://RedBullEvents.test/wp-content/themes/Red-Bull-Events/fonts/Berthold-Akzidenz-Grotesk-Bold.otf);    
+}
+
+@font-face {
+    font-family: AkzidenzBoldExtended;  
+    src: url(http://RedBullEvents.test/wp-content/themes/Red-Bull-Events/fonts/Berthold-Akzidenz-Grotesk-Bold-Extended.otf);    
+}
+
+/* Main Body Parameters */
 body {
     background: #121426;
+    font-family: "AkzidenzRegular";
+    color: white;
+    font-size: 22px;
 }
+
+/* Header & Navigation Styling */
 
 header {
     width: 100%;
-    height: 100px;
+    height: 150px;
 }
 
 .page-wrap {
@@ -19,6 +47,11 @@ header .container {
 }
 
 header .top-bar {
+    font-family: "AkzidenzMedium";
+    font-size: 22px;
+    letter-spacing: 1px;
+    
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -26,6 +59,7 @@ header .top-bar {
 }
 
 header .top-bar li a{
+    text-decoration: none;
     padding: .25rem 1rem;
     color: white;
 }
@@ -36,4 +70,51 @@ header .top-bar li:first-child a{
 
 header .top-bar li:last-child a{
     padding-right: 0;
+}
+
+header .top-bar li a:hover{
+    color: #fff07c;
+    text-shadow: 0px 0px 1px #fff07c;
+}
+
+header .top-bar li.current_page_item a{
+    color: #eb5876;
+    text-shadow: 0px 0px 1px #eb5876;
+}
+
+/* Footer Styling */
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+
+footer .container{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+}
+
+footer .companyname {
+    color: white;
+    opacity: 0.2;
+    font-family: "AkzidenzBold";
+    font-size: 26px;
+    margin-right: auto;
+}
+
+footer .footer-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer .footer-bar li a{
+    font-family: "AkzidenzBold";
+    font-size: 18px;
+    text-decoration: none;
+    padding: .25rem 1rem;
+    color: white;
 }
