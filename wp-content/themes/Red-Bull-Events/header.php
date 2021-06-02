@@ -21,5 +21,6 @@
                 'menu_class' => 'top-bar',
             )
         );?>
+        <a class="download-button"><span>DOWNLOAD NOW</span></a>
     </div>
 </header>

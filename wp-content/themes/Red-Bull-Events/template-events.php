@@ -7,6 +7,9 @@ Template Name: Events
 
 <?php get_header();?>
 
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+
 <section class="page-wrap">
     <div class="container">
         <h1><?php  the_title();?></h1>
@@ -19,6 +22,8 @@ Template Name: Events
             </div>
         </div>
 
+        </main><!-- .site-main -->
+        </div><!-- .content-area -->
     </div>
 </section>
 
