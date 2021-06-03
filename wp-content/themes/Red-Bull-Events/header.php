@@ -21,6 +21,6 @@
                 'menu_class' => 'top-bar',
             )
         );?>
-        <a class="download-button"><span>DOWNLOAD NOW</span></a>
+        <a href="https://red-bull.herokuapp.com" class="button-default button-slanted"><span class="button-slanted-content">DOWNLOAD NOW</span></a>
     </div>
 </header>
