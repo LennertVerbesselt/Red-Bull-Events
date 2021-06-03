@@ -1,8 +1,8 @@
 /* Block Styling*/
 
-.wp-block-mcb-landing-page-block-1{
-    margin-top: 11rem;
+.block-1{
     width: 99%;
+    height: 950px;
 }
 
 /* Background Styling */
@@ -176,4 +176,17 @@
     -webkit-transform: skewX(30deg);
     transform: skewX(30deg);  
     display: inline-block;
+}
+
+/* Image Styling */
+
+
+.small-illustration {
+    position: relative;
+}
+
+.ill-2 {
+    position: absolute;
+    right: 13rem;
+    bottom: -250px;
 }

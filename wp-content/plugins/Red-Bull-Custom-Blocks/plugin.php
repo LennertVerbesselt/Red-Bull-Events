@@ -30,6 +30,7 @@ function mcb_register_blocks() {
 		[ 'wp-blocks', 'wp-element', 'wp-editor' ],
 		filemtime( plugin_dir_path( __FILE__ ) . 'blocks/landing-page-block-1/landing-page-block-1.js' )
 	);
+    
 
 	// Add block style.
 	wp_register_style(

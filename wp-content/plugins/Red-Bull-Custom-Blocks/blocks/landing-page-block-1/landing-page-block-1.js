@@ -1,3 +1,4 @@
+
 ( function( blocks, editor, element ) {
 	var el = element.createElement;
 
@@ -21,7 +22,15 @@
             button: {
                 type: 'string',
                 default: 'BUTTON CAPTION'
-            }
+            },
+            mediaId: {
+                type: 'number',
+                default: 0
+            },
+            mediaUrl: {
+                type: 'string',
+                default: ''
+            },
         },
 		edit: function( props ) {
             return (

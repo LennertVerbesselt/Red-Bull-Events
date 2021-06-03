@@ -45,7 +45,7 @@ body {
 /* Header & Navigation Styling */
 
 header {
-    width: 100%;
+    width: 99%;
     height: 150px;
     z-index: 5;
 }
@@ -106,7 +106,7 @@ header .top-bar li.current_page_item a{
 
 footer {
     position: relative;
-    width: 100%;
+    width: 99%;
     height: 100px;
     bottom: 0px;
     
@@ -117,7 +117,7 @@ footer .container{
     justify-content: right;
     align-items: center;
     height: 100%;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 footer .companyname {
@@ -241,3 +241,7 @@ margin:0px;
       position: absolute;
       display: inline-block;
   }
+
+  /* {
+    outline: 1px solid #f00 !important;
+  }*/
