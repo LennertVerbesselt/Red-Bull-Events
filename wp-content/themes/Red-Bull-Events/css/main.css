@@ -45,9 +45,10 @@ body {
 /* Header & Navigation Styling */
 
 header {
-    width: 99%;
+    width: 86%;
     height: 150px;
     z-index: 5;
+    left: 7%;
 }
 
 .page-wrap {
@@ -55,9 +56,9 @@ header {
     z-index: 5;
 }
 
-header .container {
+header .navcontainer {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
     z-index: 5;
@@ -102,19 +103,24 @@ header .top-bar li.current_page_item a{
     text-shadow: 0px 0px 10px #eb5876;
 }
 
+header .top-bar .current-menu-item a{
+    color: #eb5876;
+    text-shadow: 0px 0px 10px #eb5876;
+}
+
 /* Footer Styling */
 
 footer {
     position: relative;
-    width: 99%;
+    width: 86%;
     height: 100px;
     bottom: 0px;
-    
+    left: 7%;
 }
 
-footer .container{
+footer .footercontainer{
     display:flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
     margin-top: 10rem;
@@ -137,10 +143,22 @@ footer .footer-bar {
 
 footer .footer-bar li a{
     font-family: "AkzidenzBold";
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     padding: .25rem 1rem;
     color: white;
+}
+
+footer .socialicons {
+    display: flex;
+    font-family: "AkzidenzBold";
+    font-size: 16px;
+    text-decoration: none;
+    padding: .25rem 1rem;
+    color: white;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 2rem;
 }
 
 /* Home Page Styling */

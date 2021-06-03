@@ -13,7 +13,7 @@
 
 <header>
 
-<div class="container"> 
+<div class="navcontainer"> 
         <?php 
         wp_nav_menu(
             array(

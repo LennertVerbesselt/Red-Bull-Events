@@ -61,4 +61,39 @@ function my_sidebars(){
 }
 add_action('widgets_init', 'my_sidebars');
 
+function event_post_type(){
+
+    $args = array (
+        'labels' => array(
+            'name' => 'Events',
+            'singular_name' => 'Event'
+        ),
+        'hierachical' => true,
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-awards',
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+        
+    );
+
+    register_post_type('events', $args);
+}
+add_action('init', 'event_post_type');
+
+function events_taxonomy(){
+
+    $args = array(
+        'labels' => array(
+            'name' => 'Categories',
+            'singular_name' => 'Category',
+        ),
+        'public' => true,
+        'hierarchical' => true,
+
+    );
+
+    register_taxonomy('categories', array('events'), $args);
+}
+add_action('init', 'events_taxonomy');
+
 ?>
