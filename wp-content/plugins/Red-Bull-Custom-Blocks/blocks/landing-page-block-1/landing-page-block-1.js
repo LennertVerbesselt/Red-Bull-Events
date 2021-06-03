@@ -1,22 +1,26 @@
 ( function( blocks, editor, element ) {
 	var el = element.createElement;
 
-	blocks.registerBlockType( 'mcb/main-illustration', {
-		title: 'Landing Page: Main Illustration', // The title of block in editor.
+	blocks.registerBlockType( 'mcb/landing-page-block-1', {
+		title: 'Landing Page: Custom Block 1', // The title of block in editor.
 		icon: 'admin-comments', // The icon of block in editor.
 		category: 'common', // The category of block in editor.
 		attributes: {
+            backgroundtext: {
+                type: 'string',
+                default: 'SEEK THE THRILL'
+            },
             title: {
                 type: 'string',
-                default: 'CLAIM YOUR WINGS'
+                default: 'TITLE'
             },
             text: {
                 type: 'string',
-                default: 'More QR codes, more challenges to unlock! This new application will give you the opportunity to be a champion and reach high to win prizes and get to know our events.'
+                default: 'Your amazing text here'
             },
             button: {
                 type: 'string',
-                default: 'DOWNLOAD NOW'
+                default: 'BUTTON CAPTION'
             }
         },
 		edit: function( props ) {
@@ -26,7 +30,18 @@
                         editor.RichText,
                         {
                             tagName: 'div',
-                            className: 'main-illustration-title',
+                            className: 'block-1-background-text',
+                            value: props.attributes.backgroundtext,
+                            onChange: function( content ) {
+                                props.setAttributes( { backgroundtext: content } );
+                            }
+                        }
+                    ),
+                    el(
+                        editor.RichText,
+                        {
+                            tagName: 'div',
+                            className: 'block-1-title',
                             value: props.attributes.title,
                             onChange: function( content ) {
                                 props.setAttributes( { title: content } );
@@ -37,7 +52,7 @@
                         editor.RichText,
                         {
                             tagName: 'div',
-                            className: 'main-illustration-text',
+                            className: 'block-1-text',
                             value: props.attributes.text,
                             onChange: function( content ) {
                                 props.setAttributes( { text: content } );
@@ -48,7 +63,7 @@
                         editor.RichText,
                         {
                             tagName: 'span',
-                            className: 'main-illustration-button',
+                            className: 'block-1-button',
                             value: props.attributes.button,
                             onChange: function( content ) {
                                 props.setAttributes( { button: content } );
@@ -61,32 +76,43 @@
 		save: function( props ) {
             return (
                 el( 'div', { className: props.className },
+                
+                    el ('div', {className: 'block-1-side-elements'},
+                        el('div', {className: 'side-element-line'}),
+                        el('div', {className: 'side-element-box-1'}),
+                        el('div', {className: 'side-element-box-2'}),
+                        el('div', {className: 'side-element-arrow-1'}),
+                        el('div', {className: 'side-element-arrow-2'}),
+                    ),
+                    el ('div', {className: 'block-1-main-elements'},
+                        el('div', {className: 'main-element-square-1'}),
+                        el('div', {className: 'main-element-square-2'}),
+                        el('div', {className: 'main-element-square-3'}),
+                        el('div', {className: 'main-element-square-4'}),
+                    ),
+                    el( editor.RichText.Content, {
+                        tagName: 'span',
+                        className: 'block-1-background-text',
+                        value: props.attributes.backgroundtext,
+                    } ),
                     el( editor.RichText.Content, {
                         tagName: 'h1',
-                        className: 'main-illustration-title',
+                        className: 'block-1-title',
                         value: props.attributes.title,
                     } ),
                     el( editor.RichText.Content, {
                         tagName: 'p',
-                        className: 'main-illustration-text',
+                        className: 'block-1-text',
                         value: props.attributes.text,
                     } ),
-                    el ('div', { className: 'main-illustration-CTA'}, 
-                        el('div', {className: 'design-element-1-line'}),
-                        el('div', {className: 'design-element-1-square'}),
-                        el('div', {className: 'design-element-1-four-squares'}),
-                        el('div', {className: 'design-element-1-arrow'}),
+                    el ('div', { className: 'block-1-CTA'}, 
                         el('a', {href: 'https://red-bull.herokuapp.com'}, 
-                            el( 'button', { className: 'main-illustration-button' },
-                                el( 'span', { className: 'main-illustration-button-text' },
+                            el( 'button', { className: 'block-1-button' },
+                                el( 'span', { className: 'block-1-button-text' },
                                     props.attributes.button
                                 )   
                             ),
                         ),
-                        el('div', {className: 'design-element-2-line'}),
-                        el('div', {className: 'design-element-2-square'}),
-                        el('div', {className: 'design-element-2-four-squares'}),
-                        el('div', {className: 'design-element-2-arrow'}),
                     )
                 )
             );

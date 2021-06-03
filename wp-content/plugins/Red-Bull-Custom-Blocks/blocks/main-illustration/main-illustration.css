@@ -17,12 +17,12 @@
 
 /* Button Styling*/
 
-.CTA {
+.main-illustration-CTA {
     position: relative;
-    width: 35%;
+    width: 45%;
     height: 55px;
-    left: 6%;
-    margin-top: 4rem;
+    left: 1%;
+    margin-top: 5rem;
 }
 
 .main-illustration-button {
@@ -43,15 +43,15 @@
   }
   
   .main-illustration-button {
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg);
+    -ms-transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    transform: skewX(-30deg);
   }
   
   .main-illustration-button-text {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);  
+    -ms-transform: skewX(30deg);
+    -webkit-transform: skewX(30deg);
+    transform: skewX(30deg);  
     display: inline-block;
   }
 /* Design Elements Styling*/

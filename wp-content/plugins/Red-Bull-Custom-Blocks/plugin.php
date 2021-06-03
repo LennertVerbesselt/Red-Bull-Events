@@ -24,6 +24,12 @@ function mcb_register_blocks() {
 		[ 'wp-blocks', 'wp-element', 'wp-editor' ],
 		filemtime( plugin_dir_path( __FILE__ ) . 'blocks/main-illustration/main-illustration.js' )
 	);
+    wp_register_script(
+		'landing-page-block-1',
+		plugins_url( 'blocks/landing-page-block-1/landing-page-block-1.js', __FILE__ ),
+		[ 'wp-blocks', 'wp-element', 'wp-editor' ],
+		filemtime( plugin_dir_path( __FILE__ ) . 'blocks/landing-page-block-1/landing-page-block-1.js' )
+	);
 
 	// Add block style.
 	wp_register_style(
@@ -38,6 +44,12 @@ function mcb_register_blocks() {
 		[],
 		filemtime( plugin_dir_path( __FILE__ ) . 'blocks/main-illustration/main-illustration.css' )
 	);
+    wp_register_style(
+		'landing-page-block-1',
+		plugins_url( 'blocks/landing-page-block-1/landing-page-block-1.css', __FILE__ ),
+		[],
+		filemtime( plugin_dir_path( __FILE__ ) . 'blocks/landing-page-block-1/landing-page-block-1.css' )
+	);
 
 	// Register block script and style.
 	register_block_type( 'mcb/call-to-action', [
@@ -47,6 +59,10 @@ function mcb_register_blocks() {
     register_block_type( 'mcb/main-illustration', [
 		'style' => 'main-illustration', // Loads both on editor and frontend.
 		'editor_script' => 'main-illustration', // Loads only on editor.
+	] );
+    register_block_type( 'mcb/landing-page-block-1', [
+		'style' => 'landing-page-block-1', // Loads both on editor and frontend.
+		'editor_script' => 'landing-page-block-1', // Loads only on editor.
 	] );
 }
 
