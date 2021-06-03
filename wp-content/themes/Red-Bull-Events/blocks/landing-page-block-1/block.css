@@ -2,7 +2,8 @@
 
 .block-1{
     width: 99%;
-    height: 950px;
+    height: 1000px;
+    margin-bottom: 1rem;
 }
 
 /* Background Styling */
@@ -27,7 +28,7 @@
 .side-element-line {
     position: absolute;
     left: 25%;
-    height: 108%;
+    height: 120%;
     top: -8%;
     width: 3px;
     background-color: white;
@@ -134,7 +135,7 @@
 .block-1-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
-    width: 45%;
+    width: 38%;
     margin-left: 18%;
     
 }
@@ -145,8 +146,8 @@
     position: relative;
     width: 45%;
     height: 55px;
-    left: 18%;
-    margin-top: 5rem;
+    left: 19%;
+    margin-top: 3rem;
 }
 
 .block-1-button {
