@@ -87,6 +87,86 @@
     z-index: 2;
 }
 
+.world-main-element-square-dark-3 {
+    position: absolute;
+    left: 15%;
+    top: 14%;
+    height: 8px;
+    width: 8px;
+    border: 4px solid #121426;
+    z-index: 2;
+}
+
+.world-main-element-square-dark-4 {
+    position: absolute;
+    right: 9.5%;
+    top: 42.5%;
+    height: 6px;
+    width: 6px;
+    border: 3px solid #121426;
+    z-index: 2;
+}
+
+.world-main-element-square-dark-5 {
+    position: absolute;
+    right: 11%;
+    top: 58%;
+    height: 10px;
+    width: 10px;
+    border: 5px solid #121426;
+    z-index: 2;
+}
+
+.world-main-element-square-light-1 {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #FFFFFF;
+    z-index: 2;
+}
+
+.world-main-element-square-light-2 {
+    position: absolute;
+    left: 7%;
+    top: 52.5%;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #FFFFFF;
+    z-index: 2;
+}
+
+.world-main-element-square-light-3 {
+    position: absolute;
+    left: 8.5%;
+    top: 50%;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #FFFFFF;
+    z-index: 2;
+}
+
+.world-main-element-square-light-4 {
+    position: absolute;
+    right: 26%;
+    top: 30%;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #FFFFFF;
+    z-index: 2;
+}
+
+.world-main-element-square-light-5 {
+    position: absolute;
+    right: 26%;
+    top: 27%;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #FFFFFF;
+    z-index: 2;
+}
+
 /* Text Styling */
 
 .block-world-background-text {
