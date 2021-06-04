@@ -72,7 +72,7 @@ function event_post_type(){
         'public' => true,
         'has_archive' => true,
         'menu_icon' => 'dashicons-awards',
-        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+        'supports' => array('title', 'thumbnail', 'custom-fields'),
         
     );
 
