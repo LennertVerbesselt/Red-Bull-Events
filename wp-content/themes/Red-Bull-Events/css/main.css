@@ -587,6 +587,214 @@ background: linear-gradient(0deg, rgba(18,20,38,1) 0%, rgba(18,20,38,0) 80%);
     
 }
 
+/* Single Event Styling */
+
+.event-container{
+    margin-top: -2%;
+    width: 100%;
+    position: relative;
+}
+
+.event-gradient {
+    width: 100%;
+    height: 660px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(18,20,38,1) 0%, rgba(18,20,38,0) 80%);
+    z-index: 0;
+}
+
+.event-header-icon {
+    position: absolute;
+    width: 80%;
+    left:10%;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.event-header{
+    height: 660px;
+
+}
+
+.event-icon-container {
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+}
+
+.event-icon {
+    max-width: 300px;
+    max-height: 250px;
+}
+
+.event-header-name {
+    font-family: "AkzidenzBold";
+    font-size: 80px;
+    color: white;
+    text-align: center;
+
+    width: 100%;
+    height: 660px;
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.event-1-line {
+    position: absolute;
+    left: 22%;
+    top: 50%;
+    height: 3px;
+    width: 15%;
+    background-color: white;
+}
+
+.event-1-square {
+    position: absolute;
+    left: 36%;
+    top: 57%;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #eb5876;
+    
+}
+
+.event-1-arrow {
+    position: absolute;
+    left:37%;
+    top: 40%;
+    width: 16px;
+    height: 15px;
+    background-image: 
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5Ljc4NCIgaGVpZ2h0PSI5LjIwMiIgdmlld0JveD0iMCAwIDkuNzg0IDkuMjAyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTS0uMTM4LDBINi44MDlMOS42NDYsNC44LDYuODA5LDkuMkgtLjEzOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMTM4KSIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event-1-four-squares {
+    position: absolute;
+    left:33%;
+    top: 30%;
+    width: 20px;
+    height: 20px;
+    background-image: 
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZWI1ODc2O308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTc0LjUpIj48cmVjdCBjbGFzcz0iYSIgd2lkdGg9IjQiIGhlaWdodD0iNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgyLjUpIi8+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3NC41KSIvPjxyZWN0IGNsYXNzPSJhIiB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNzQuNSA4KSIvPjxyZWN0IGNsYXNzPSJhIiB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODIuNSA4KSIvPjwvZz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event-2-line {
+    position: absolute;
+    right: 22%;
+    top: 50%;
+    height: 3px;
+    width: 15%;
+    background-color: white;
+}
+
+.event-2-square {
+    position: absolute;
+    right: 36%;
+    top: 57%;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #eb5876;
+    
+}
+
+.event-2-arrow {
+    position: absolute;
+    right:37%;
+    top: 40%;
+    width: 16px;
+    height: 15px;
+    background-image: 
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5Ljc4NCIgaGVpZ2h0PSI5LjIwMiIgdmlld0JveD0iMCAwIDkuNzg0IDkuMjAyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTS0uMTM4LDBINi44MDlMOS42NDYsNC44LDYuODA5LDkuMkgtLjEzOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMTM4KSIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(-1);
+}
+
+.event-2-four-squares {
+    position: absolute;
+    right:33%;
+    top: 30%;
+    width: 20px;
+    height: 20px;
+    background-image: 
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZWI1ODc2O308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTc0LjUpIj48cmVjdCBjbGFzcz0iYSIgd2lkdGg9IjQiIGhlaWdodD0iNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTgyLjUpIi8+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3NC41KSIvPjxyZWN0IGNsYXNzPSJhIiB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNzQuNSA4KSIvPjxyZWN0IGNsYXNzPSJhIiB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODIuNSA4KSIvPjwvZz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.event-body {
+    height: 100%;
+}
+
+.event-description {
+
+}
+
+.event-extra {
+
+}
+
+.event-promo-images {
+
+}
+
+.promo-image-1 {
+
+}
+
+.promo-image-2 {
+
+}
+
+.promo-image-3 {
+
+}
+
+.event-cta {
+
+}
+
+.event-cta-text {
+
+}
+
+.event-cta-button {
+
+}
+
+.event-body-design {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.event-body-background-title {
+    font-family: "AkzidenzBold";
+    font-size: 160px;
+    position: absolute;
+    right:-10%;
+    bottom:0;
+    color: #121426;
+    text-shadow: #eb5876 0px 0px 3px,   #eb5876 0px 0px 3px;
+    -webkit-font-smoothing: antialiased;
+    
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
 
 
 

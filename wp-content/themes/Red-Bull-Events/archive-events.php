@@ -15,8 +15,6 @@
         <div class="design-element-2-four-squares"></div>
         <div class="design-element-2-arrow"></div>
 
-        
-
 </div>
 
 <p class="archive-title-text">Discover worldwide Red Bull events. Explore the event calendar to see past and upcoming events: bike, motorsport, surfing, winter sport, music, gaming and much more.</p>
